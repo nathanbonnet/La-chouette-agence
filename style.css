@@ -559,7 +559,6 @@ button {
 
 a[data-lightbox] {
     position: relative;
-    display: block;
     text-align: center;
 }
 

@@ -33,6 +33,10 @@ button {
     display: flex;
 }
 
+.d-block{
+    display: block;
+}
+
 .justify-center {
     justify-content: center;
 }
@@ -44,6 +48,10 @@ button {
 a:hover {
     text-decoration: none;
     cursor: pointer;
+}
+
+.introduction {
+    font-size: 22px;
 }
 
 #page-loading-blocs-notifaction {

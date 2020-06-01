@@ -11,7 +11,6 @@
 		gtag('config', 'UA-166831237-1');
 	</script>
     <meta charset="utf-8">
-    <meta name="keywords" content="la chouette agence, entreprise web design lyon, entreprise web design">
     <meta name="description" content="La chouette agence est une entreprise web design qui se trouve à Lyon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="shortcut icon" type="image/png" href="favicon.jpg">
@@ -45,7 +44,7 @@
 		<nav class="navbar row">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="index.html"><img src="img/la-chouette-agence.png" alt="logo la chouette agence | entreprise web design Lyon" height="40" /></a>
-				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+				<button aria-label="menu" id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
 					<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 				</button>
 			</div>
@@ -53,6 +52,9 @@
 				<ul class="site-navigation nav navbar-nav">
 					<li>
 						<a href="index.html">Accueil</a>
+					</li>
+					<li>
+						<a href="page2.html">contact &gt;</a>
 					</li>
 				</ul>
 			</div>
@@ -84,29 +86,30 @@
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-6">
-				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+				<form id="form_1" novalidate>
 					<div class="form-group">
-						<label>
+						<label for="name">
 							Nom
 						</label>
 						<input id="name" class="form-control" required />
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="mail">
 							Adresse email
 						</label>
 						<input id="email" class="form-control" type="email" required />
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="connaissance">
 							Comment nous avez-vous connu ?
 						</label>
 						<input class="form-control" type="email" required id="input_504" />
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="text1">
 							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+						</label>
+						<textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
 					</div> 
 					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
 						Envoyer
